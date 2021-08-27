@@ -1,0 +1,5 @@
+language: generic
+services:
+  - docker
+after_success:
+echo "done" > /tmp/done.txt  
