@@ -11,3 +11,15 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+  - name: tests
+    task:
+      prologue:
+        commands:
+          - checkout
+      jobs:
+        - name: unit tests
+          commands:
+            - echo "running simasterb unit tests"
+        - name: integration tests
+          commands:
+            - echo "running integration tests"
